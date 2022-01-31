@@ -1,0 +1,53 @@
+snippet cls
+<?php
+
+declare(strict_types=1);
+
+namespace $1;
+
+final class $2
+{
+	$3
+}
+endsnippet
+
+snippet acls
+<?php
+
+declare(strict_types=1);
+
+namespace $1;
+
+abstract class $2
+{
+	$3
+}
+endsnippet
+
+snippet intr
+<?php
+
+declare(strict_types=1);
+
+namespace $1;
+
+interface $2
+{
+	$3
+}
+endsnippet
+
+snippet utest
+<?php
+
+declare(strict_types=1);
+
+namespace $1;
+
+use PHPUnit\Framework\TestCase;
+
+final class $2 extends TestCase
+{
+	$3
+}
+endsnippet

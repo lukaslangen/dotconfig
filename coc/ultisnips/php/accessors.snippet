@@ -1,0 +1,23 @@
+snippet getter
+public function get$1(): $2
+{
+	return \$this->$3;
+}
+endsnippet
+
+snippet setter
+public function set$1($2): void
+{
+	\$this->$3 = \$$4;
+}
+endsnippet
+
+snippet isetter
+public function with$1($2): static
+{
+	\$clone = clone \$this;
+	\$clone->\$$3 = \$$4;
+
+	return \$clone;
+}
+endsnippet
