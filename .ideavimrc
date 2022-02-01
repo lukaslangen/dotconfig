@@ -1,0 +1,36 @@
+let mapleader = " "
+
+set nu
+set rnu
+
+set showmode
+set incsearch
+
+set ideastrictmode
+set ideajoin
+set ideastatusicon=gray
+
+" normal map
+nmap - <Action>(ActivateProjectToolWindow)
+
+" leader map
+nmap <leader>fs :w<cr>
+nmap <leader>jk mmA;<esc>`m
+
+" action map
+nmap <leader>bb <Action>(RecentFiles)
+nmap <leader>ra <Action>(RunAnything)
+nmap <leader>rr :action Rerun<cr>
+nmap <leader>rt <Action>(RerunTests)
+nmap <leader>o <Action>(FileStructurePopup)
+nmap <leader>ff :action GotoFile<cr>
+nmap <leader>aa :action GotoAction<cr>
+vmap <leader>aa :action GotoAction<cr>
+nmap <leader>ss :action FindInPath<cr>
+nmap <leader>gr :action GotoImplementation<cr>
+nmap <leader>gt <Action>(GotoTest)
+
+" insert map
+imap jj <esc>
+imap jk <esc>mmA;<esc>`ma
+imap <C-o> <esc>o
