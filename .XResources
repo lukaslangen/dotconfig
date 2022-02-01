@@ -1,0 +1,30 @@
+URxvt.background: [97]#282a36
+URxvt.foreground: #eff0eb
+URxvt.cursorColor: #9aedfe
+
+URxvt.color0: #33303b
+URxvt.color1: #ff5c57
+URxvt.color2: #5af78e
+URxvt.color3: #f3f99d
+URxvt.color4: #57c7ff
+URxvt.color5: #ff6ac1
+URxvt.color6: #0adfe
+URxvt.color7: #eff0eb
+URxvt.color8: #4f4b58
+URxvt.color9: #ff5c57
+URxvt.color10: #5af78e
+URxvt.color11: #f3f99d
+URxvt.color12: #57c7ff
+URxvt.color13: #ff6ac1
+URxvt.color14: #0adfe
+URxvt.color15: #eff0eb
+
+/* *font: xft:bitstream vera sans mono:size=12:antialias=true */
+URxvt.font: xft:Hack Nerd Font Mono:size=12:antialias=true
+/* *boldFont: xft:bitstream vera sans mono:bold:size=12:antialias=true */
+URxvt.boldFont: xft:Hack Nerd Font Mono:bold:size=12:antialias=true
+
+URxvt.scrollBar: false
+
+URxvt.transparent: true
+URxvt.shading: 20
