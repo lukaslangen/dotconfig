@@ -2,6 +2,9 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.local/share/nvim/plugged')
 
+    -- general
+    Plug 'jenterkin/vim-autosource'
+
     -- colorscheme
     Plug 'cormacrelf/vim-colors-github'
 
@@ -11,7 +14,9 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
     Plug 'tpope/vim-commentary'
 
     -- fuzzy find
-    Plug('junegunn/fzf', {dir = '~/.local/share/fzf', ['do'] = './install --all'})
+    Plug('junegunn/fzf', {
+        dir = '~/.local/share/fzf', ['do'] = './install --all'
+    })
     Plug 'junegunn/fzf.vim'
 
     -- dev tools
@@ -22,8 +27,13 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
     Plug 'tpope/vim-dadbod'
     Plug 'scrooloose/vim-slumlord'
     Plug 'aklt/plantuml-syntax'
-    Plug('phpactor/phpactor', {branch = 'master', ['do'] = 'composer install --no-dev -o'})
-    Plug('alvan/vim-php-manual', {['for'] = 'php'})
+    Plug('phpactor/phpactor', {
+        branch = 'master',
+        ['do'] = 'composer install --no-dev -o'
+    })
+    Plug('alvan/vim-php-manual', {
+        ['for'] = 'php'
+    })
 
     -- Syntax
     Plug 'StanAngeloff/php.vim'
@@ -31,13 +41,17 @@ vim.call('plug#begin', '~/.local/share/nvim/plugged')
     Plug 'posva/vim-vue'
     Plug 'plasticboy/vim-markdown'
     Plug 'udalov/kotlin-vim'
+    Plug 'othree/html5.vim'
+    Plug 'lumiliet/vim-twig'
 
     -- Git
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
 
     -- Autocompletion
-    Plug('neoclide/coc.nvim', {branch = 'release'})
+    Plug('neoclide/coc.nvim', {
+        branch = 'release'
+    })
     Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
 

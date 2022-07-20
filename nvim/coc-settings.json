@@ -13,5 +13,6 @@
     "coc.preferences.formatOnSaveFiletypes": [
         "rust"
     ],
-    "git.enableGutters": false
+    "git.enableGutters": false,
+    "intelephense.licenseKey": "0002MBPLMBSYRC1"
 }

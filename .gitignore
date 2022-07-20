@@ -1,0 +1,5 @@
+coc/extensions/node_modules
+coc/extensions/coc-phpls-data
+coc/commands
+coc/list*
+coc/memos.json

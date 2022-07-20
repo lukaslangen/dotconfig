@@ -33,6 +33,12 @@ exec --no-startup-id nm-applet
 # Start dunst
 exec --no-startup-id dunst
 
+# Move workspaces
+exec --no-startup-id ~/bin/docking.sh
+
+# Merge .XResources
+exec --no-startup-id xrdb -merge ~/.XResources
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -41,8 +47,8 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use xbacklight to adjust screen brightness
-bindcode 232 exec brightnessctl -d intel_backlight set 5-
-bindcode 233 exec brightnessctl -d intel_backlight set +5
+bindcode 232 exec brightnessctl set 5-
+bindcode 233 exec brightnessctl set +5
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
