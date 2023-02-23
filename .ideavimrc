@@ -29,6 +29,7 @@ vmap <leader>aa :action GotoAction<cr>
 nmap <leader>ss :action FindInPath<cr>
 nmap <leader>gr :action GotoImplementation<cr>
 nmap <leader>gt <Action>(GotoTest)
+nmap <leader>gs :action GotoSuperMethod<cr>
 
 " insert map
 imap jj <esc>

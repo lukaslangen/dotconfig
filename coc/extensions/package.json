@@ -3,5 +3,7 @@
     "coc-deno": ">=3.9.5",
     "coc-phpls": ">=2.2.2",
     "coc-tsserver": ">=1.10.5"
-  }
+  },
+  "disabled": [],
+  "locked": []
 }
